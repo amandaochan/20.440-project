@@ -8,6 +8,7 @@ The data is available on the Gene Expression Omnibus repository with the primary
 
 
 ### Folder Structure
+```
 project
 │   README.md
 │   requirements.txt
@@ -24,18 +25,19 @@ project
     ├───data_processing
     ├───util
     └───visualization
+```
     
 The purpose of the folders is as follows:
-    data/raw/: raw data from the authors
-    data/processed/: intermediate data during processing
-    data/results/: our results
-    fig/main_fig/: our main figures
-    fig/supp_fig/: our supplementary figures
-    notebook/: Jupyter notebooks for exploratory data analysis
-    src/analysis/: code for producing results
-    src/data_processing/: code for loading and cleaning the authors' data
-    src/util/: helper functions and reused scripts
-    src/visualization/: code for plotting results
+* **data/raw/**: raw data from the authors (downloaded from GEO)
+* **data/processed/**: intermediate data during processing
+* **data/results/**: our results
+* **fig/main_fig/: our main figures
+* **fig/supp_fig/: our supplementary figures
+* **notebook/: Jupyter notebooks for exploratory data analysis
+* **src/analysis/: code for producing results
+* **src/data_processing/: code for loading and cleaning the authors' data
+* **src/util/: helper functions and reused scripts
+* **src/visualization/: code for plotting results
 
 
 ### Installation
