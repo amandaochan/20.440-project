@@ -61,4 +61,4 @@ python .\src\data_processing\process_raw_data.py
 python .\src\visualization\generate_table1.py
 ```
 
-"Table1.png" will be generated and stored in the folder "figs/main_figs".
+"Table1.png" will be generated and stored in the folder "fig/main_fig".
