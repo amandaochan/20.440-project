@@ -28,16 +28,37 @@ project
 ```
     
 The purpose of the folders is as follows:
-* **data/raw/**: raw data from the authors (downloaded from GEO)
+* **data/raw/**: raw data from the authors, downloaded from GEO
 * **data/processed/**: intermediate data during processing
-* **data/results/**: our results
-* **fig/main_fig/: our main figures
-* **fig/supp_fig/: our supplementary figures
-* **notebook/: Jupyter notebooks for exploratory data analysis
-* **src/analysis/: code for producing results
-* **src/data_processing/: code for loading and cleaning the authors' data
-* **src/util/: helper functions and reused scripts
-* **src/visualization/: code for plotting results
+* **data/results/**: our results from our code (not yet populated in Git)
+* **fig/main_fig/**: our main figures generated from our code
+* **fig/supp_fig/**: our supplementary figures generated from our code (not yet populated in Git)
+* **notebook/**: Jupyter notebooks for initial data visualization and exploration (not yet populated in Git)
+* **src/analysis/**: code for producing results (not yet populated in Git)
+* **src/data_processing/**: code for loading and processing the authors' data
+* **src/util/**: helper functions and reused scripts (not yet populated in Git)
+* **src/visualization/**: code for plotting results
 
 
 ### Installation
+#### Setup
+Create a virtual environment using Anaconda and navigate to that environment. Install pip:
+```
+conda create --name myenv
+conda activate myenv
+conda install pip
+```
+
+Navigate to the project directory and install the necessary packages using the requirements.txt file:
+```
+pip install -r requirements.txt
+```
+
+#### Running code
+To generate Table 1, navigate to the main project directory and run:
+```
+python .\src\data_processing\process_raw_data.py
+python .\src\visualization\generate_table1.py
+```
+
+"Table1.png" will be generated and stored in the folder "figs/main_figs".
